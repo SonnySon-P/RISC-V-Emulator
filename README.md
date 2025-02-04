@@ -19,23 +19,23 @@
 **檔案說明：**
 ```bash
 .
-|-- LICENSE
-|-- README.md
-\-- code  # 開發程式資料夾
-      |-- main.py  # 主程式
-      |-- readFile.py  # 讀取組語模組
-      |-- RV32IMemory.py  # 模擬memory模組
-      |-- RV32IRegisters.py  # 模擬register模組
-      |-- cpuCore.py  # 模擬CPU模組
-      |-- instructionTyple.py  # instruction與Typle的對應模組
-      |-- rType.py  # 模擬R-Type instruction運行模組
-      |-- iType.py  # 模擬I-Type instruction運行模組
-      |-- sType.py  # 模擬S-Type instruction運行模組
-      |-- bType.py  # 模擬B-Type instruction運行模組
-      |-- uType.py  # 模擬U-Type instruction運行模組
-      |-- jType.py  # 模擬J-Type instruction運行模組
-      |-- otherType.py  # 模擬ecall instruction運行模組
-      \-- try.asm  # 測試檔案
+├── LICENSE
+├── README.md
+└──  code  # 開發程式資料夾
+      ├── main.py  # 主程式
+      ├── readFile.py  # 讀取組語模組
+      ├── RV32IMemory.py  # 模擬memory模組
+      ├── RV32IRegisters.py  # 模擬register模組
+      ├── cpuCore.py  # 模擬CPU模組
+      ├── instructionTyple.py  # instruction與Typle的對應模組
+      ├── rType.py  # 模擬R-Type instruction運行模組
+      ├── iType.py  # 模擬I-Type instruction運行模組
+      ├── sType.py  # 模擬S-Type instruction運行模組
+      ├── bType.py  # 模擬B-Type instruction運行模組
+      ├── uType.py  # 模擬U-Type instruction運行模組
+      ├── jType.py  # 模擬J-Type instruction運行模組
+      ├── otherType.py  # 模擬ecall instruction運行模組
+      └──  try.asm  # 測試檔案
 ```
 
 ## 貳、設計概念
