@@ -20,13 +20,31 @@
 **檔案說明：**
 ```bash
 .
+|-- LICENSE
 |-- README.md
-|-- 執行畫面.png  # 軟體執行畫面
-\-- app  # 開發程式資料夾
-      |-- MotionPlanningExample.java  # 主程式
-      |-- MenuBar.java  # 設置MenuBar模組
-      |-- PolygonPanel.java  # 繪製圖形模組
-      |-- AStar.java  # A＊演算法模組
-      |-- CheckCollisions.java  # 檢驗碰撞模組
-      \-- SmoothPath.java  # 平滑化路徑模組
+\-- code  # 開發程式資料夾
+      |-- main.py  # 主程式
+      |-- readFile.py  # 讀取組語模組
+      |-- RV32IMemory.py  # 模擬memory模組
+      |-- RV32IRegisters.py  # 模擬register模組
+      |-- cpuCore.py  # 模擬CPU模組
+      |-- instructionTyple.py  # instruction與Typle的對應模組
+      |-- rType.py  # 模擬R-Type instruction運行模組
+      |-- iType.py  # 模擬I-Type instruction運行模組
+      |-- sType.py  # 模擬S-Type instruction運行模組
+      |-- bType.py  # 模擬B-Type instruction運行模組
+      |-- uType.py  # 模擬U-Type instruction運行模組
+      |-- jType.py  # 模擬J-Type instruction運行模組
+      |-- otherType.py  # 模擬ecall instruction運行模組
+      \-- try.asm  # 測試檔案
 ```
+
+## 貳、設計概念
+
+## 參、運行方式
+**運行方式：** 請開啟終端機，並進入存放該檔案資料夾，執行以下指令進行模擬
+```shell
+python main.py try.asm
+```
+> [!Warning]
+> 請特別注意，由於我在解讀RISC-V手冊時對於ecall系統調用號碼的理解尚不完全，因此目前實作中僅涵蓋了基本的讀取、寫入與關閉等功能。如果系統調用號碼有所錯誤，還請多多包涵。另外，對於某些指令，我直接以十進位進行處理，這樣的做法可能會導致本應使用二進位格式運算的結果有所偏差，尤其在不同位數下的計算結果可能會有所不同。敬請理解。
