@@ -1,0 +1,78 @@
+class registersAddressMapping:
+    # 定義暫存器對照表
+    registersAddress = {
+        "x0": 0x00,
+        "zero": 0x00,
+        "x1": 0x01,
+        "ra": 0x01,
+        "x2": 0x02,
+        "sp": 0x02,
+        "x3": 0x03,
+        "gp": 0x03,
+        "x4": 0x04,
+        "tp": 0x04,
+        "x5": 0x05,
+        "t0": 0x05,
+        "x6": 0x06,
+        "t1": 0x06,
+        "x7": 0x07,
+        "t2": 0x07,
+        "x8": 0x08,
+        "s0": 0x08,
+        "fp": 0x08,
+        "x9": 0x09,
+        "s1": 0x09,
+        "x10": 0x0A,
+        "a0": 0x0A,
+        "x11": 0x0B,
+        "a1": 0x0B,
+        "x12": 0x0C,
+        "a2": 0x0C,
+        "x13": 0x0D,
+        "a3": 0x0D,
+        "x14": 0x0E,
+        "a4": 0x0E,
+        "x15": 0x0F,
+        "a5": 0x0F,
+        "x16": 0x10,
+        "a6": 0x10,
+        "x17": 0x11,
+        "a7": 0x11,
+        "x18": 0x12,
+        "s2": 0x12,
+        "x19": 0x13,
+        "s3": 0x13,
+        "x20": 0x14,
+        "s4": 0x14,
+        "x21": 0x15,
+        "s5": 0x15,
+        "x22": 0x16,
+        "s6": 0x16,
+        "x23": 0x17,
+        "s7": 0x17,
+        "x24": 0x18,
+        "s8": 0x18,
+        "x25": 0x19,
+        "s9": 0x19,
+        "x26": 0x1A,
+        "s10": 0x1A,
+        "x27": 0x1B,
+        "s11": 0x1B,
+        "x28": 0x1C,
+        "s3": 0x1C,
+        "x29": 0x1D,
+        "s4": 0x1D,
+        "x30": 0x1E,
+        "s5": 0x1E,
+        "x31": 0x1F,
+        "s6": 0x1F
+    }
+
+    @staticmethod
+    def getRegisterAddress(registerName):
+        # 查詢寄存器名稱對應的地址
+        registerName = registerName.lower()  # 支援大小寫不敏感
+        if registerName in registersAddressMapping.registersAddress:
+            return registersAddressMapping.registersAddress[registerName]
+        else:
+            print(f"Invalid register name: {registerName}")
