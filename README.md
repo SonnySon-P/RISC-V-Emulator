@@ -35,7 +35,7 @@
       ├── uType.py  # 模擬U-Type instruction運行模組
       ├── jType.py  # 模擬J-Type instruction運行模組
       ├── otherType.py  # 模擬ecall instruction運行模組
-      └──  try.asm  # 測試檔案
+      └── try.asm  # 測試檔案
 ```
 
 ## 貳、設計概念
@@ -46,7 +46,7 @@
 * 運行instruction
   * 解析該instruction所屬哪種Type
   * 針對不同Type，提取不同參數
-  * 針對該instruction，進存取register、邏輯運算、轉跳...等操作
+  * 針對該instruction，進行存取register、邏輯運算、轉跳...等操作
 
 ## 參、運行方式
 **運行方式：** 請開啟終端機，並進入存放該檔案資料夾，執行以下指令進行模擬
